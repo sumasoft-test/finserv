@@ -6,7 +6,7 @@ if(isset($_POST['mobile']) && $_POST['mobile'] <> ''){
     foreach($mobileArray as $key=>$val){
         if($val <> ''){
             $val = trim($val);
-             $url = "http://192.168.3.251/test.ajax?do=manualUpload&username=admin&password=contaquenv&campname=PERSONAL_LOAN&skillname=API_CALLS&listname=api_calls&phone1=$val&status=NEW";
+             $url = "http://192.168.4.11/test.ajax?do=manualUpload&username=admin&password=contaquenv&campname=PERSONAL_LOAN&skillname=API_CALLS&listname=api_calls&phone1=$val&status=NEW";
               $ch = curl_init();
                 $headers = array(
                 //'Accept: application/json',
